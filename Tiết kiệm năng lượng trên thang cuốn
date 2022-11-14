@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import math
+
+
+def f(x, lamda, tau):
+    return lamda * pow(math.e, -lamda * (x + tau))
+
+
+Lamda = 10
+Tau = 0.05
+y = np.linspace(start=0, stop=10, num=500)
+plt.xlim(0, 8)
+plt.ylim(0, 8)
+plt.xlabel('y', fontsize=16)
+plt.ylabel('fY(y)', fontsize=16)
+
+plt.plot(y, f(y, Lamda, Tau))
+plt.show()
