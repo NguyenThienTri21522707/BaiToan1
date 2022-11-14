@@ -8,9 +8,9 @@ import math
 def f(x, lamda, tau):
     return lamda * pow(math.e, -lamda * (x + tau))
 
-
-Lamda = 10
-Tau = 0.05
+#input
+Lamda = 10  #đơn vị: số người/phút
+Tau = 0.05  #đơn vị: phút
 y = np.linspace(start=0, stop=10, num=500)  # tạo mảng gồm 500 số thực, bắt đầu là 0 và kết thúc là 10
 plt.xlim(0, 8) # trục x
 plt.ylim(0, 8) # trục y
